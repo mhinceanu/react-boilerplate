@@ -1,0 +1,1 @@
+export const SEARCH_ZIPCODE = 'SEARCH_ZIPCODE';
