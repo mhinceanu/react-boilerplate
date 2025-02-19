@@ -1,0 +1,47 @@
+@import '../styles/colors.scss';
+@import '../styles/typography.scss';
+
+.bp-app {
+    align-items: center;
+    background-color: $violet;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 20px;
+
+    > h4 {
+        font-size: $h4-mobile;
+        margin-top: 100px;
+    }
+
+    > p {
+        font-size: $p-mobile;
+        margin-top: 10px;
+    }
+
+    &__search {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: clamp(300px, 100%, 500px);
+
+        > input {
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            border-bottom: 1px solid $caramel;
+            color: $tea;
+            font-size: 1.6rem;
+            font-weight: 600;
+            height: 40px;
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        > button {
+            height: 40px;
+            width: 200px;
+        }
+    }
+}

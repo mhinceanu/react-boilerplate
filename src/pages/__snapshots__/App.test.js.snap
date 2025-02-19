@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render <App /> 1`] = `
+<div>
+  <div
+    class="bp-app"
+  >
+    <h4>
+      Search information about zipcode.
+    </h4>
+    <p>
+      Here are some examples: 90210, 33162
+    </p>
+    <div
+      class="bp-app__search"
+    >
+      <input
+        placeholder="Zipcode..."
+        tabindex="0"
+        type="number"
+        value=""
+      />
+      <button
+        disabled=""
+        tabindex="0"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;

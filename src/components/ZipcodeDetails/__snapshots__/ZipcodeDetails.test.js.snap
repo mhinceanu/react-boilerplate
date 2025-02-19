@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ZipcodeDetails /> should render <ZipcodeDetails /> with data 1`] = `
+<div>
+  <article>
+    <p>
+      Country: 
+      United States
+    </p>
+    <p>
+      Post code: 
+      90210
+    </p>
+    <section>
+      <p>
+        Latitude: 
+        34.0901
+      </p>
+      <p>
+        Longitude: 
+        -118.4065
+      </p>
+      <p>
+        Place name: 
+        Beverly Hills
+      </p>
+      <p>
+        State: 
+        California
+      </p>
+      <p>
+        Abbreviation: 
+        CA
+      </p>
+    </section>
+  </article>
+</div>
+`;
+
+exports[`<ZipcodeDetails /> should render <ZipcodeDetails /> with no data 1`] = `
+<div>
+  <div
+    data-testid="no-data"
+  >
+    No data.
+  </div>
+</div>
+`;

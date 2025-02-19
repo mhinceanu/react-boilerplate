@@ -23,6 +23,11 @@ export default [
     "no-useless-return": 2,
     "no-undef": "off",
     "radix": 2,
-    "react/prop-types": 2,
-  }}
+    "react/prop-types": "off"
+  }},
+  {ignores: [
+    "src/testsHelper.js",
+    "jest.config.js",
+    "babel.config.js"
+  ]}
 ];

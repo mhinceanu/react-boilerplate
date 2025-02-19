@@ -1,8 +1,21 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { WrapStore } from '../testsHelper';
+import { initialState } from '../reducers/zipcode';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { container } = render(<App />);
-  expect(container).toMatchSnapshot();
+describe('<App />', function () {
+  const getComponent = () => {
+    return (
+      <WrapStore initialState={{ zipcode: initialState }}>
+        <App />
+      </WrapStore>
+    );
+  };
+
+  it('should render <App />', () => {
+    const { container } = render(getComponent());
+
+    expect(container).toMatchSnapshot();
+  });
 });

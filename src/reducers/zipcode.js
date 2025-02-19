@@ -4,7 +4,7 @@ import { PENDING, SUCCESS, ERROR } from '../constants/actionStatus';
 export const initialState = {
   isFetching: false,
   fetched: false,
-  zipcode: null,
+  data: null,
   error: null
 };
 
@@ -17,7 +17,7 @@ const zipcode = (state = initialState, action = {}) => {
         ...state,
         isFetching: true,
         fetched: false,
-        zipcode: null,
+        data: null,
         error: null
       };
 
@@ -26,7 +26,7 @@ const zipcode = (state = initialState, action = {}) => {
         ...state,
         isFetching: false,
         fetched: true,
-        zipcode: response
+        data: response
       };
 
     case `${SEARCH_ZIPCODE}_${ERROR}`:

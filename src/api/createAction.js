@@ -2,14 +2,12 @@ import { attemptRequest } from 'redux-requests';
 import { PENDING, SUCCESS, ERROR } from '../constants/actionStatus';
 
 const checkStatus = (response) => {
-  console.log(response);
-
   if (response.status >= 200 && response.status < 300) {
     return response;
   }
 
   const error = new Error(response.statusText);
-  // error.error = response;
+  error.error = response;
   error.code = response.status;
   throw error;
 };
@@ -38,7 +36,10 @@ const createAction = (type, url, options) => {
         return res;
       })
       .catch((err) => {
-        reject(err);
+        reject({
+          message: err.message,
+          status: err.code
+        });
       });
   });
 

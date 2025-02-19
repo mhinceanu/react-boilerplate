@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoadingIndicator /> should render <LoadingIndicator /> 1`] = `
+<div>
+  <div
+    class="bp-loader"
+  />
+</div>
+`;
